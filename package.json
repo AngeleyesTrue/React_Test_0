@@ -23,5 +23,13 @@
     "typescript": "^2.8.1",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngeleyesTrue/React_Test_0.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AngeleyesTrue/React_Test_0/issues"
+  },
+  "homepage": "https://github.com/AngeleyesTrue/React_Test_0#readme"
 }
