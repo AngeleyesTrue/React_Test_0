@@ -1,12 +1,14 @@
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 module.exports = {
     entry: "./src/index.tsx",
+    plugins: [
+        new CleanWebpackPlugin(['dist']),
+    ],
     output: {
         filename: "bundle.js",
         path: __dirname + "/dist"
     },
-
-    // webpack의 출력을 디버깅 할 소스 맵을 사용하도록 설정합니다.
-    devtool: "source-map",
 
     resolve: {
         // 확인 가능한 확장자로 '.ts' 및 '.tsx'를 추가합니다.
