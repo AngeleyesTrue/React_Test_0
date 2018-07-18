@@ -1,14 +1,16 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry: "./src/index.tsx",
-    plugins: [
-        new CleanWebpackPlugin(['dist']),
-    ],
     output: {
-        filename: "bundle.js",
+        filename: "[name].[hash].js",
         path: __dirname + "/dist"
     },
+
+    plugins: [
+        new HtmlWebpackPlugin({template: './index.html'}),
+    ],
 
     resolve: {
         // 확인 가능한 확장자로 '.ts' 및 '.tsx'를 추가합니다.
@@ -23,14 +25,5 @@ module.exports = {
             // '.js' 파일의 모든 출력에는 'source-maps-loader'로 다시 처리된 소스 맵이 있습니다.
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
         ]
-    },
-
-    // 경로가 다음 중 하나와 일치하는 모듈을 임포트 경우
-    // 해당하는 글로벌 변수가 있다고 가정하고 대신 사용하세요.
-    // 이는 브라우저가 빌드와 라이브러리 사이에 캐시 할 수 있게 해주는
-    // 모든 종속성을 번들로 묶는 것을 피할 수 있기 때문에 중요합니다.
-    externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
     },
 };
