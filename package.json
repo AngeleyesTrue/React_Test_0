@@ -14,22 +14,22 @@
   "author": "Angeleyes",
   "license": "ISC",
   "dependencies": {
-    "@types/react": "^16.3.11",
-    "@types/react-dom": "^16.0.5",
-    "npm": "^6.4.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "webpack-dev-server": "^3.1.11"
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.3",
+    "npm": "^7.12.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack-dev-server": "^3.11.2"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "html-webpack-plugin": "^3.2.0",
-    "source-map-loader": "^0.2.4",
-    "typescript": "^3.9.7",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-merge": "^4.2.2"
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "source-map-loader": "^2.0.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-merge": "^5.7.3"
   },
   "repository": {
     "type": "git",
